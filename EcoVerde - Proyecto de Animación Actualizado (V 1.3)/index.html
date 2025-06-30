@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVerde - Productos Ecológicos y Jardinería Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> info@ecoverde.com</span>
+                <span><i class="fas fa-phone"></i> +507 6000-0000</span>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo y Nombre -->
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="EcoVerde Logo Text">
+                        <h2>"Jardiner&iacute;a Sostenible"</h2>
+                    </div>
+                </div>
+
+                <!-- Buscador -->
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar productos ecológicos...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- Carrito y Cuenta -->
+                <div class="user-section">
+                    <div class="account-menu">
+                        <button class="account-btn">
+                            <i class="fas fa-user"></i>
+                            <span>Mi Cuenta</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="IniciarSesion.html" class="dropdown-item">Iniciar Sesión</a>
+                            <a href="Registrarte.html" class="dropdown-item">Registrarse</a>
+                            <a href="#" class="dropdown-item">Mis Pedidos</a>
+                            <a href="contacto.html" class="dropdown-item">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación Principal -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Productos <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Plantas y Semillas</a>
+                        <a href="#" class="dropdown-item">Herramientas Ecológicas</a>
+                        <a href="#" class="dropdown-item">Fertilizantes Orgánicos</a>
+                        <a href="#" class="dropdown-item">Macetas Biodegradables</a>
+                        <a href="#" class="dropdown-item">Sistemas de Riego</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Ofertas <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Descuentos del Mes</a>
+                        <a href="#" class="dropdown-item">Packs Especiales</a>
+                        <a href="#" class="dropdown-item">Liquidación</a>
+                        <a href="#" class="dropdown-item">Ofertas Flash</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Más Vendidos <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Top Plantas</a>
+                        <a href="#" class="dropdown-item">Herramientas Populares</a>
+                        <a href="#" class="dropdown-item">Kits de Jardinería</a>
+                        <a href="#" class="dropdown-item">Productos Estrella</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Blog & Nosotros <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="Blog.html" class="dropdown-item">Blog de Jardinería</a>
+                        <a href="VideosyTutorial.html" class="dropdown-item">Videos y Tutoriales</a>
+                        <a href="Nosotros.html" class="dropdown-item">Sobre Nosotros</a>
+                        <a href="FAQ.html" class="dropdown-item">Preguntas Frecuentes (FAQ)</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section class="hero-banner">
+        <div class="banner-slider">
+            <div class="banner-slide active">
+                <div class="banner-content">
+                    <h2>Cultiva un Futuro Verde</h2>
+                    <p>Descubre productos ecológicos que cuidan tu jardín y el planeta</p>
+                    <button class="cta-button">Explorar Productos</button>
+                </div>
+                <div class="banner-image">
+                    <img src="https://img.freepik.com/fotos-premium/jardineria-plantacion-plantas-jardin-jardin-enfoque-selectivo_73944-7416.jpg" alt="Jardín ecológico">
+                </div>
+            </div>
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2>Jardinería Sostenible</h2>
+                    <p>Herramientas y productos que respetan el medio ambiente</p>
+                    <button class="cta-button">Ver Ofertas</button>
+                </div>
+                <div class="banner-image">
+                    <img src="https://st3.depositphotos.com/1194063/14742/i/450/depositphotos_147422883-stock-photo-planting-seedlings-in-greenhouse.jpg" alt="Herramientas ecológicas">
+                </div>
+            </div>
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2>Huertos Urbanos</h2>
+                    <p>Todo lo necesario para crear tu propio huerto en casa</p>
+                    <button class="cta-button">Comenzar Ahora</button>
+                </div>
+                <div class="banner-image">
+                    <img src="https://img.freepik.com/fotos-premium/nino-madre-jardineria-huerto-patio-trasero_266247-2893.jpg" alt="Huerto urbano">
+                </div>
+            </div>
+        </div>
+        <div class="banner-controls">
+            <button class="banner-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="banner-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="banner-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Productos Destacados -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Productos Destacados</h2>
+                    <a href="#" class="view-all">Ver Todos <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="products-slider">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.gardenpocket.es/wp-content/uploads/2021/10/Garden-Pocket-Aromaticas-1.jpg" alt="Planta Ecológica">
+                            <div class="product-badge">Destacado</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit de Plantas Aromáticas</h3>
+                            <p class="product-price">$11.99</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://m.media-amazon.com/images/I/713DEmOoRwL._AC_UF894,1000_QL80_.jpg" alt="Herramientas Ecológicas">
+                            <div class="product-badge">Nuevo</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Set Herramientas Bambú</h3>
+                            <p class="product-price">$13.99</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.greenboost.mx/cdn/shop/files/fertilizante_5L_fondo_blanco_01.png?v=1748359177&width=1946" alt="Fertilizante Orgánico">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fertilizante Orgánico 5L</h3>
+                            <p class="product-price">$12.99</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://m.media-amazon.com/images/I/91gKm2qhgbL._AC_UF1000,1000_QL80_.jpg" alt="Macetas Biodegradables">
+                            <div class="product-badge">Eco</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Macetas Biodegradables Pack 12</h3>
+                            <p class="product-price">$10.99</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.rainbird.com/sites/default/files/styles/large/public/media/images/2024-10/drip_emitter_conversion.png?itok=T5z_YdHg" alt="Sistema de Riego">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sistema Riego Automático</h3>
+                            <p class="product-price">$25.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://uy.minigarden.net/wp-content/uploads/2020/04/paquetes-minigarden-semillas-ecologicas.jpg" alt="Semillas Ecológicas">
+                            <div class="product-badge">Orgánico</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Semillas Hortalizas Ecológicas</h3>
+                            <p class="product-price">$12.99</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Próximos Lanzamientos -->
+        <section class="upcoming-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Próximos Lanzamientos</h2>
+                    <a href="#" class="view-all">Ver Todos <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="products-slider">
+                    <div class="product-card upcoming">
+                        <div class="product-image">
+                            <img src="https://www.vertiflor.com/botiga/wp-content/uploads/jardinera-V15-9.jpg" alt="Próximo Producto">
+                            <div class="product-badge">Próximamente</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Huerto Vertical</h3>
+                            <p class="product-price">$28.99</p>
+                            <button class="notify-btn">Notificarme</button>
+                        </div>
+                    </div>
+                    <div class="product-card upcoming">
+                        <div class="product-image">
+                            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/1ba32ca3-6241-4d85-9046-c233a343a50e.__CR0,0,600,450_PT0_SX600_V1___.png" alt="Próximo Producto">
+                            <div class="product-badge">Próximamente</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Compostador Inteligente</h3>
+                            <p class="product-price">$199.99</p>
+                            <button class="notify-btn">Notificarme</button>
+                        </div>
+                    </div>
+                    <div class="product-card upcoming">
+                        <div class="product-image">
+                            <img src="https://m.media-amazon.com/images/I/71xb-GANsGL.jpg" alt="Próximo Producto">
+                            <div class="product-badge">Próximamente</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sensor de Humedad IoT</h3>
+                            <p class="product-price">$34.99</p>
+                            <button class="notify-btn">Notificarme</button>
+                        </div>
+                    </div>
+                    <div class="product-card upcoming">
+                        <div class="product-image">
+                            <img src="https://m.media-amazon.com/images/I/81Jgb0BHR6L._AC_UF894,1000_QL80_.jpg" alt="Próximo Producto">
+                            <div class="product-badge">Próximamente</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Invernadero Portátil</h3>
+                            <p class="product-price">$299.99</p>
+                            <button class="notify-btn">Notificarme</button>
+                        </div>
+                    </div>
+                    <div class="product-card upcoming">
+                        <div class="product-image">
+                            <img src="https://m.media-amazon.com/images/I/51pwQN9cIjL._AC_UF1000,1000_QL80_.jpg" alt="Próximo Producto">
+                            <div class="product-badge">Próximamente</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Plantas Purificadoras</h3>
+                            <p class="product-price">$29.99</p>
+                            <button class="notify-btn">Notificarme</button>
+                        </div>
+                    </div>
+                    <div class="product-card upcoming">
+                        <div class="product-image">
+                            <img src="https://ladosisgrowshop.cl/wp-content/uploads/2024/08/1000109025.jpg" alt="Próximo Producto">
+                            <div class="product-badge">Próximamente</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sustrato Premium Orgánico</h3>
+                            <p class="product-price">$19.99</p>
+                            <button class="notify-btn">Notificarme</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ofertas Especiales -->
+        <section class="special-offers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ofertas Especiales</h2>
+                    <span class="offer-timer">¡Oferta limitada!</span>
+                </div>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-image">
+                            <img src="https://resources.claroshop.com/medios-plazavip/t1/1711145998DNQNP798117CBT72712347335112023Ojpg" alt="Oferta Especial">
+                            <div class="discount-badge">-30%</div>
+                        </div>
+                        <div class="offer-info">
+                            <h3>Pack Jardinería Completo</h3>
+                            <div class="price-info">
+                                <span class="old-price">$39.99</span>
+                                <span class="new-price">$12.99</span>
+                            </div>
+                            <button class="offer-btn">Aprovechar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-image">
+                            <img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2021/04/huerto-urbano-set-kultiveri-2289721.jpg?tf=3840x" alt="Oferta Especial">
+                            <div class="discount-badge">-25%</div>
+                        </div>
+                        <div class="offer-info">
+                            <h3>Kit Huerto Urbano Starter</h3>
+                            <div class="price-info">
+                                <span class="old-price">$35.99</span>
+                                <span class="new-price">$10.99</span>
+                            </div>
+                            <button class="offer-btn">Aprovechar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-image">
+                            <img src="https://imagenes.elpais.com/resizer/v2/PZUSL5N4MFBJZOLOKDCNAFS4TI.png?auth=68b2873944813b29621a9620180f19484a8c5bcf3d394fe958a69e850331c015&width=1960" alt="Oferta Especial">
+                            <div class="discount-badge">-40%</div>
+                        </div>
+                        <div class="offer-info">
+                            <h3>Colección Plantas Aromáticas</h3>
+                            <div class="price-info">
+                                <span class="old-price">$29.99</span>
+                                <span class="new-price">$17.99</span>
+                            </div>
+                            <button class="offer-btn">Aprovechar Oferta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Navegación por Categorías -->
+        <section class="category-navigation">
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-column">
+                        <h3>Buscar por Materia</h3>
+                        <ul class="category-list">
+                            <li><a href="#"><i class="fas fa-seedling"></i> Cuidado de Plantas</a></li>
+                            <li><a href="#"><i class="fas fa-recycle"></i> Compostaje y Reciclaje</a></li>
+                            <li><a href="#"><i class="fas fa-carrot"></i> Huertos Ecológicos</a></li>
+                            <li><a href="#"><i class="fas fa-leaf"></i> Decoración Natural</a></li>
+                        </ul>
+                        <h4>Explorar</h4>
+                        <ul class="category-list">
+                            <li><a href="#"><i class="fas fa-lightbulb"></i> Consejos de Jardinería</a></li>
+                            <li><a href="#"><i class="fas fa-clipboard-list"></i> Pedidos Especiales</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> Catálogos</a></li>
+                        </ul>
+                    </div>
+                    <div class="category-column">
+                        <div class="eco-message">
+                            <h3>EcoVerde: Tu Aliado Verde</h3>
+                            <p>Comprometidos con un futuro sostenible, ofrecemos productos ecológicos de la más alta calidad para tu jardín y hogar. Cada compra contribuye a un planeta más verde.</p>
+                        </div>
+                        <div class="eco-image">
+                            <img src="https://img.freepik.com/premium-photo/gardening-tools-hd-8k-wallpaper-stock-photographic-image_915071-77512.jpg" style="width: 560px; height: auto" alt= "Jardín Ecológico">
+                        </div>
+                        <div class="social-section">
+                            <h4>Síguenos</h4>
+                            <div class="social-links-footer">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoVerde</h4>
+                    <p>Tu tienda de confianza para productos ecológicos y jardinería sostenible.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Plantas y Semillas</a></li>
+                        <li><a href="#">Herramientas</a></li>
+                        <li><a href="#">Fertilizantes</a></li>
+                        <li><a href="#">Macetas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoVerde. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+  window.addEventListener("load", function () {
+    // Espera 1.5 segundos para mostrar el loader
+    setTimeout(() => {
+      document.body.classList.add("fade-out");
+
+      // Después de 800ms (duración de transición), quita el loader
+      setTimeout(() => {
+        const loader = document.getElementById("loader");
+        if (loader) loader.remove();
+      }, 800);
+    }, 1500);
+  });
+</script>
+
+
+
+</body>
+</html>

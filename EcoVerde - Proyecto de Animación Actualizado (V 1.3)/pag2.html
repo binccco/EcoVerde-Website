@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - EcoVerde</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> info@ecoverde.com</span>
+                <span><i class="fas fa-phone"></i> +507 6000-0000</span>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Principal -->
+        <!-- Header Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo y Nombre -->
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="EcoVerde Logo Text">
+                        <h2>"Jardiner&iacute;a Sostenible"</h2>
+                    </div>
+                </div>
+
+                <!-- Buscador -->
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar productos ecológicos...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- Carrito y Cuenta -->
+                <div class="user-section">
+                    <div class="account-menu">
+                        <button class="account-btn">
+                            <i class="fas fa-user"></i>
+                            <span>Mi Cuenta</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="IniciarSesion.html" class="dropdown-item">Iniciar Sesión</a>
+                            <a href="Registrarte.html" class="dropdown-item">Registrarse</a>
+                            <a href="#" class="dropdown-item">Mis Pedidos</a>
+                            <a href="contacto.html" class="dropdown-item">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación Principal -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="page2.html" class="dropdown-toggle active">Productos <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Plantas y Semillas</a>
+                        <a href="#" class="dropdown-item">Herramientas Ecológicas</a>
+                        <a href="#" class="dropdown-item">Fertilizantes Orgánicos</a>
+                        <a href="#" class="dropdown-item">Macetas Biodegradables</a>
+                        <a href="#" class="dropdown-item">Sistemas de Riego</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Ofertas <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Descuentos del Mes</a>
+                        <a href="#" class="dropdown-item">Packs Especiales</a>
+                        <a href="#" class="dropdown-item">Liquidación</a>
+                        <a href="#" class="dropdown-item">Ofertas Flash</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Más Vendidos <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Top Plantas</a>
+                        <a href="#" class="dropdown-item">Herramientas Populares</a>
+                        <a href="#" class="dropdown-item">Kits de Jardinería</a>
+                        <a href="#" class="dropdown-item">Productos Estrella</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Blog & Nosotros <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="Blog.html" class="dropdown-item">Blog de Jardinería</a>
+                        <a href="VideosyTutorial.html" class="dropdown-item">Videos y Tutoriales</a>
+                        <a href="Nosotros.html" class="dropdown-item">Sobre Nosotros</a>
+                        <a href="FAQ.html" class="dropdown-item">Preguntas Frecuentes (FAQ)</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active">Productos</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Nuestros Productos Ecológicos</h1>
+                <p>Descubre nuestra amplia gama de productos sostenibles para tu jardín</p>
+            </div>
+
+            <!-- Filtros y Ordenación -->
+            <div class="filters-section">
+                <div class="filters-left">
+                    <div class="filter-group">
+                        <label for="category-filter">Categoría:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="">Todas las categorías</option>
+                            <option value="plantas">Plantas y Semillas</option>
+                            <option value="herramientas">Herramientas</option>
+                            <option value="fertilizantes">Fertilizantes</option>
+                            <option value="macetas">Macetas</option>
+                            <option value="riego">Sistemas de Riego</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-filter">Precio:</label>
+                        <select id="price-filter" class="filter-select">
+                            <option value="">Todos los precios</option>
+                            <option value="0-25">€0 - €25</option>
+                            <option value="25-50">€25 - €50</option>
+                            <option value="50-100">€50 - €100</option>
+                            <option value="100+">€100+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filters-right">
+                    <div class="sort-group">
+                        <label for="sort-select">Ordenar por:</label>
+                        <select id="sort-select" class="filter-select">
+                            <option value="featured">Destacados</option>
+                            <option value="price-low">Precio: Menor a Mayor</option>
+                            <option value="price-high">Precio: Mayor a Menor</option>
+                            <option value="name">Nombre A-Z</option>
+                            <option value="newest">Más Recientes</option>
+                        </select>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Productos -->
+            <div class="products-grid" id="products-grid">
+                <!-- Plantas y Semillas -->
+                <div class="product-card" data-category="plantas" data-price="24.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Kit de Plantas Aromáticas">
+                        <div class="product-badge">Bestseller</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Plantas y Semillas</div>
+                        <h3>Kit de Plantas Aromáticas</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(127 reseñas)</span>
+                        </div>
+                        <p class="product-description">Incluye albahaca, romero, tomillo y orégano. Perfecto para principiantes.</p>
+                        <div class="product-price">€24.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="herramientas" data-price="39.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Set Herramientas Bambú">
+                        <div class="product-badge eco">Eco</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Herramientas</div>
+                        <h3>Set Herramientas Bambú</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(89 reseñas)</span>
+                        </div>
+                        <p class="product-description">Set completo de herramientas de jardinería hechas con bambú sostenible.</p>
+                        <div class="product-price">€39.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fertilizantes" data-price="18.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Fertilizante Orgánico">
+                        <div class="product-badge organic">Orgánico</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fertilizantes</div>
+                        <h3>Fertilizante Orgánico 5L</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(203 reseñas)</span>
+                        </div>
+                        <p class="product-description">Fertilizante 100% orgánico, ideal para todo tipo de plantas.</p>
+                        <div class="product-price">€18.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="macetas" data-price="15.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Macetas Biodegradables">
+                        <div class="product-badge new">Nuevo</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Macetas</div>
+                        <h3>Macetas Biodegradables Pack 12</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(56 reseñas)</span>
+                        </div>
+                        <p class="product-description">Macetas 100% biodegradables, perfectas para semilleros.</p>
+                        <div class="product-price">€15.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="riego" data-price="89.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Sistema de Riego">
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Sistemas de Riego</div>
+                        <h3>Sistema Riego Automático</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(78 reseñas)</span>
+                        </div>
+                        <p class="product-description">Sistema de riego por goteo programable, ahorra agua y tiempo.</p>
+                        <div class="product-price">€89.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="plantas" data-price="12.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Semillas Ecológicas">
+                        <div class="product-badge sale">-20%</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Plantas y Semillas</div>
+                        <h3>Semillas Hortalizas Ecológicas</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(145 reseñas)</span>
+                        </div>
+                        <p class="product-description">Variedad de semillas de hortalizas certificadas ecológicas.</p>
+                        <div class="product-price">
+                            <span class="old-price">€16.99</span>
+                            <span class="current-price">€12.99</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="herramientas" data-price="65.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Kit Jardinería Profesional">
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Herramientas</div>
+                        <h3>Kit Jardinería Profesional</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(92 reseñas)</span>
+                        </div>
+                        <p class="product-description">Kit completo con 15 herramientas profesionales de jardinería.</p>
+                        <div class="product-price">€65.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fertilizantes" data-price="32.99">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Compost Orgánico">
+                        <div class="product-badge organic">Orgánico</div>
+                        <div class="product-actions">
+                            <button class="quick-view" title="Vista rápida"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="Añadir a favoritos"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fertilizantes</div>
+                        <h3>Compost Orgánico Premium 20L</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(167 reseñas)</span>
+                        </div>
+                        <p class="product-description">Compost premium rico en nutrientes para todo tipo de plantas.</p>
+                        <div class="product-price">€32.99</div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginación -->
+            <div class="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">...</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoVerde</h4>
+                    <p>Tu tienda de confianza para productos ecológicos y jardinería sostenible.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Plantas y Semillas</a></li>
+                        <li><a href="#">Herramientas</a></li>
+                        <li><a href="#">Fertilizantes</a></li>
+                        <li><a href="#">Macetas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoVerde. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Funcionalidad específica de la página de productos
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeProductFilters();
+            initializeViewToggle();
+            initializeWishlist();
+        });
+
+        function initializeProductFilters() {
+            const categoryFilter = document.getElementById('category-filter');
+            const priceFilter = document.getElementById('price-filter');
+            const sortSelect = document.getElementById('sort-select');
+            const productsGrid = document.getElementById('products-grid');
+            const productCards = productsGrid.querySelectorAll('.product-card');
+
+            function filterProducts() {
+                const selectedCategory = categoryFilter.value;
+                const selectedPriceRange = priceFilter.value;
+                const sortBy = sortSelect.value;
+
+                let filteredProducts = Array.from(productCards);
+
+                // Filtrar por categoría
+                if (selectedCategory) {
+                    filteredProducts = filteredProducts.filter(card => 
+                        card.dataset.category === selectedCategory
+                    );
+                }
+
+                // Filtrar por precio
+                if (selectedPriceRange) {
+                    filteredProducts = filteredProducts.filter(card => {
+                        const price = parseFloat(card.dataset.price);
+                        const [min, max] = selectedPriceRange.split('-').map(p => 
+                            p === '+' ? Infinity : parseFloat(p)
+                        );
+                        return price >= min && (max === undefined || price <= max);
+                    });
+                }
+
+                // Ocultar todos los productos
+                productCards.forEach(card => card.style.display = 'none');
+
+                // Mostrar productos filtrados
+                filteredProducts.forEach(card => card.style.display = 'block');
+
+                // Ordenar productos
+                sortProducts(filteredProducts, sortBy);
+            }
+
+            function sortProducts(products, sortBy) {
+                const sortedProducts = [...products].sort((a, b) => {
+                    switch (sortBy) {
+                        case 'price-low':
+                            return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+                        case 'price-high':
+                            return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+                        case 'name':
+                            return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+                        default:
+                            return 0;
+                    }
+                });
+
+                // Reordenar en el DOM
+                sortedProducts.forEach(product => {
+                    productsGrid.appendChild(product);
+                });
+            }
+
+            categoryFilter.addEventListener('change', filterProducts);
+            priceFilter.addEventListener('change', filterProducts);
+            sortSelect.addEventListener('change', filterProducts);
+        }
+
+        function initializeViewToggle() {
+            const viewBtns = document.querySelectorAll('.view-btn');
+            const productsGrid = document.getElementById('products-grid');
+
+            viewBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    viewBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const view = btn.dataset.view;
+                    if (view === 'list') {
+                        productsGrid.classList.add('list-view');
+                    } else {
+                        productsGrid.classList.remove('list-view');
+                    }
+                });
+            });
+        }
+
+        function initializeWishlist() {
+            const wishlistBtns = document.querySelectorAll('.add-to-wishlist');
+
+            wishlistBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    btn.classList.toggle('active');
+                    
+                    if (btn.classList.contains('active')) {
+                        btn.innerHTML = '<i class="fas fa-heart"></i>';
+                        showNotification('Añadido a favoritos', 'success');
+                    } else {
+                        btn.innerHTML = '<i class="far fa-heart"></i>';
+                        showNotification('Eliminado de favoritos', 'info');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
